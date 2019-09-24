@@ -9,7 +9,7 @@ QUERY="$1"
 
 # do the work
 echo "$ROOT$QUERY" >&2
-curl "$ROOT$QUERY" | xsltproc $XSLT2CSV -
+curl --silent "$ROOT$QUERY" | xsltproc $XSLT2CSV -
 
 # done
 exit

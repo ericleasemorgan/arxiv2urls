@@ -7,7 +7,7 @@ mkdir -p "$DIRECTORY"
 
 BASENAME=$( basename $URL )
 OUTPUT="$DIRECTORY/$BASENAME.pdf"
-curl -L --output "$OUTPUT" "$URL"
-sleep 5
+curl --silent -L --output "$OUTPUT" "$URL"
+sleep 10
 
 exit
